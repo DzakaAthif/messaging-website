@@ -1,0 +1,35 @@
+<html>
+    <body>
+
+        <div class="section">
+            <p class="subtitle">This username-password combination is valid, welcome new user</p>
+    
+            <p class="title mt-2" id="username">${name}</p>
+            <p id="public" name="public"></p>
+            <p id="private"></p>
+        </div>   
+        <div class="column is-one-third">
+            <p class="subtitle" id="generating">generating public-private key pair...</p>
+            <p class="subtitle is-hidden" id="finished">public-private key pair successfully generated!</p>
+            <progress class="progress is-large is-primary" max="100" id="progress-bar">60%</progress>
+            <button class="button is-dark mb-3 is-hidden" id="to-login">Go to Login</button>
+        </div>
+        
+        
+    </body>
+
+</html>
+
+<script src="../js/PKE.js"></script>
+
+<script>
+    h_link.classList.remove("is-active");
+    p_link.classList.remove("is-active");
+    c_link.classList.remove("is-active");
+    a_link.classList.remove("is-active");
+    t_link.classList.remove("is-active");
+    l_link.classList.remove("is-active");
+    login_link.classList.remove("is-active");
+    
+    r_link.classList.add("is-active");
+</script>

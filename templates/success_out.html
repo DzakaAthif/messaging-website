@@ -1,0 +1,25 @@
+<div class="column is-half">
+
+    <div class="section">
+        <p class="title has-text-primary">You have succesfully logged out, goodbye ${name}! :(</p>
+        <progress class="progress is-large is-primary my-3" max="100">60%</progress>
+    </div>
+
+</div>
+
+
+<script>
+    h_link.classList.remove("is-active");
+    p_link.classList.remove("is-active");
+    c_link.classList.remove("is-active");
+    a_link.classList.remove("is-active");
+    t_link.classList.remove("is-active");
+    login_link.classList.remove("is-active");
+    r_link.classList.remove("is-active");
+    
+    l_link.classList.add("is-active");
+
+    localStorage.setItem("hidden", "true");
+    
+    setTimeout(() => { window.location.replace("/home"); }, 2000);
+</script>

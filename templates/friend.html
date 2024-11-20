@@ -1,0 +1,83 @@
+<div class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-one-quarter">
+                <div class="fields">
+                    <button class="button my-3 is-dark" value="Edit Profile"><p class="mx-6 px-6">Edit Profile</p></button>
+                </div>
+                <div class="fields">
+                    <button class="button my-3 is-dark" value="Friend List"><p class="mx-6 px-6">Friend List</p></button>
+                </div>
+                <div class="fields">
+                    <button class="button my-3 is-dark" value="Settings"><p class="mx-6 px-6">  Settings  </p></button>
+                </div>
+                
+            </div>
+            <div class="column is-three-quarter">
+                <div class="columns is-vcentered">
+                    <div class="column is-one-quarter">
+                        <figure class="image">
+                            <img src="img/profile-pic.png" alt="profile picture">
+                        </figure>    
+                    </div>
+                    <div class="column is-three-quarters has-text-left">
+                        <p class="title">
+                            ${username}
+                        </p>
+                    </div>
+                </div>
+                <div class="message is-dark mx-3">
+                    <div class="message-header">
+                        <p class="title has-text-white">Add Friend</p>
+                    </div>
+                    <div class="message-body">
+                        <form action="/friend" method="post">
+                            <div class="fields">
+                                <label class="label has-text-left">Please type a username to add as friend:</label>
+                                <div class="control">
+                                    <input type="text" class="input" name="username" placeholder="username">
+                                </div>
+                            </div>
+    
+                            <input type="submit" class="button mt-2 is-primary" name="button" value="add">
+                        </form>
+                        <p>${add_mssg}</p>
+                    </div>
+                </div>
+
+                <div class="message is-dark mx-3">
+                    <div class="message-header">
+                        <p class="title has-text-white">Remove Friend</p>
+                    </div>
+                    <div class="message-body">
+                        <form action="/friend" method="post">
+                            <div class="fields">
+                                <label class="label has-text-left">Please type a friend name to remove:</label>
+                                <div class="control">
+                                    <input type="text" class="input" name="username" placeholder="username">
+                                </div>
+                            </div>
+
+                            <input type="submit" class="button mt-2 is-danger" name="button" value="remove">
+                        </form>
+                        <p>${rm_mssg}</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    h_link.classList.remove("is-active");
+    login_link.classList.remove("is-active");
+    c_link.classList.remove("is-active");
+    a_link.classList.remove("is-active");
+    t_link.classList.remove("is-active");
+    l_link.classList.remove("is-active");
+    r_link.classList.remove("is-active");
+    
+    p_link.classList.add("is-active");
+    
+</script>

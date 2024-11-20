@@ -1,0 +1,41 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="css/temp.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<nav class="navbar is-dark">
+  <div class="navbar-menu has-text-weight-bold is-size-5">
+    <div class="navbar-start">
+      <a class="navbar-item is-active is-tab" href="/home" id="home-link"><p class="my-4">HOME</p></a>
+      <a class="navbar-item is-hidden is-tab" href="/friend" id="profile-link">PROFILE</a>
+      <a class="navbar-item is-hidden is-tab" href="/chat" id="chat-link">CHAT</a>
+      <a class="navbar-item is-tab" href="/about" id="about-link">ABOUT</a>
+      <a class="navbar-item is-hidden is-tab" href="/test" id="test-link">TEST</a>
+    </div>
+    <div class="navbar-end">
+      <a class="navbar-item is-tab" href="/register" id="register-link">REGISTER</a>
+      <a class="navbar-item is-tab" href="/login" id="login-link">LOGIN</a>
+      <a class="navbar-item is-hidden is-tab" id="logout-link">LOGOUT</a>
+    </div>
+  </div>
+</nav>
+
+<div class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content has-background-white py-5 px-5">
+    <h3 class="title mb-6 has-text-centered">Confirm Logout</h3>
+    <div class="columns is-multiline is-centered">
+      <div class="column has-text-centered">
+        <button class="button is-primary is-large" id="yes-button">YES</button>
+      </div>
+      <div class="column has-text-centered">
+        <button class="button is-danger is-large" id="no-button">NO</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<center>
+
+<p><i>By Zhuo Chen and Dzaka Haidar Athif from CC03_Team9</i></p>
+<script src="js/script_head.js"></script>

@@ -1,0 +1,86 @@
+<div class="section">
+    <div class="container">
+        <div class="columns has-text-left">
+
+            <div class="column">
+                <div class="message is-dark">
+
+                    <div class="message-header">
+                        <p class="title has-text-white">Send Messages</p>
+                    </div>
+
+                    <div class="message-body">
+                        <p>Please select a friend to message:</p>
+
+                        <p id="test"></p>
+
+                        <form action="/chat" method="post" id="send_form" name="send_form">
+
+                            <div class="fields my-3">
+                                <input type="checkbox" id="send_person" name="send_person" value="${friend}">
+                                <label for="send_person">${friend}</label>
+                            </div>
+
+                            <p class="mb-3" id="hint">Please type your message below, then press send button.</p>
+                            
+                            <textarea class="textarea is-hovered" id="send_message" name="send_message" rows="10" cols="50"></textarea>
+
+                            <input class="button mt-3 is-dark" type="submit" name="button" value="send">
+                
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="column">
+
+                <div class="message is-dark">
+
+                    <div class="message-header">
+                        <p class="title has-text-white">Received Messages</p>
+                    </div>
+
+                    <div class="message-body">
+                        <p>Please select a friend to message:</p>
+                        <p id="sk"></p>
+
+                        <form action="/chat" method="post" id="rec_form" name="rec_form">
+
+                            <div class="fields my-3">
+                                <input type="checkbox" id="rec_person" name="rec_person" value="${friend}">
+                                <label for="receive">${friend}</label>
+                            </div>
+                        
+                            <input class="button is-dark my-3" type="submit" name="button" value="receive">       
+
+                        <p>Your message will appear below.</p>
+                        <p id="rec_message">${mssgs}</p>
+                        <textarea class="textarea is-hovered" id="test_message" name="test_message" rows="10" cols="50"></textarea>
+                        
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="js/encode message.js">
+</script>
+
+<script>
+    h_link.classList.remove("is-active");
+    login_link.classList.remove("is-active");
+    p_link.classList.remove("is-active");
+    a_link.classList.remove("is-active");
+    t_link.classList.remove("is-active");
+    l_link.classList.remove("is-active");
+    r_link.classList.remove("is-active");
+    
+    c_link.classList.add("is-active");
+    
+</script>
